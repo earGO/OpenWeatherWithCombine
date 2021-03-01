@@ -11,6 +11,7 @@
 		A531127825EDB14C00E8E38A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A531127725EDB14C00E8E38A /* ContentView.swift */; };
 		A531127A25EDB14D00E8E38A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A531127925EDB14D00E8E38A /* Assets.xcassets */; };
 		A531127D25EDB14D00E8E38A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A531127C25EDB14D00E8E38A /* Preview Assets.xcassets */; };
+		A531129025EDB46700E8E38A /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A531128F25EDB46700E8E38A /* ApiConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		A531127925EDB14D00E8E38A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A531127C25EDB14D00E8E38A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A531127E25EDB14D00E8E38A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A531128F25EDB46700E8E38A /* ApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		A531128525EDB17200E8E38A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				A531128E25EDB44C00E8E38A /* OpenWeatherAPI */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -107,6 +110,14 @@
 				A531127B25EDB14D00E8E38A /* Preview Content */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		A531128E25EDB44C00E8E38A /* OpenWeatherAPI */ = {
+			isa = PBXGroup;
+			children = (
+				A531128F25EDB46700E8E38A /* ApiConfig.swift */,
+			);
+			path = OpenWeatherAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 			files = (
 				A531127825EDB14C00E8E38A /* ContentView.swift in Sources */,
 				A531127625EDB14C00E8E38A /* WeatherWithCombineApp.swift in Sources */,
+				A531129025EDB46700E8E38A /* ApiConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
