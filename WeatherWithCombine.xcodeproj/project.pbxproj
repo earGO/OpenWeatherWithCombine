@@ -14,6 +14,11 @@
 		A531129025EDB46700E8E38A /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A531128F25EDB46700E8E38A /* ApiConfig.swift */; };
 		A531129325EDB55400E8E38A /* WeatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A531129225EDB55400E8E38A /* WeatherFetcher.swift */; };
 		A531129625EDB59300E8E38A /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A531129525EDB59300E8E38A /* Responses.swift */; };
+		A531129925EDB5DB00E8E38A /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A531129825EDB5DB00E8E38A /* Errors.swift */; };
+		A53112A025EDB71400E8E38A /* WeatherFetcherExtensionMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A531129F25EDB71400E8E38A /* WeatherFetcherExtensionMethods.swift */; };
+		A53112A325EDB7D000E8E38A /* Parsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53112A225EDB7D000E8E38A /* Parsers.swift */; };
+		A53112A625EDB88400E8E38A /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53112A525EDB88400E8E38A /* Formatters.swift */; };
+		A53112A925EDB89800E8E38A /* ArrayFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53112A825EDB89800E8E38A /* ArrayFiltering.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		A531128F25EDB46700E8E38A /* ApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfig.swift; sourceTree = "<group>"; };
 		A531129225EDB55400E8E38A /* WeatherFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFetcher.swift; sourceTree = "<group>"; };
 		A531129525EDB59300E8E38A /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		A531129825EDB5DB00E8E38A /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		A531129F25EDB71400E8E38A /* WeatherFetcherExtensionMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFetcherExtensionMethods.swift; sourceTree = "<group>"; };
+		A53112A225EDB7D000E8E38A /* Parsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsers.swift; sourceTree = "<group>"; };
+		A53112A525EDB88400E8E38A /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		A53112A825EDB89800E8E38A /* ArrayFiltering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayFiltering.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,7 @@
 			children = (
 				A531129225EDB55400E8E38A /* WeatherFetcher.swift */,
 				A531128E25EDB44C00E8E38A /* OpenWeatherAPI */,
+				A531129F25EDB71400E8E38A /* WeatherFetcherExtensionMethods.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -103,6 +114,8 @@
 		A531128825EDB19D00E8E38A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A53112A525EDB88400E8E38A /* Formatters.swift */,
+				A53112A825EDB89800E8E38A /* ArrayFiltering.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -122,6 +135,8 @@
 			children = (
 				A531128F25EDB46700E8E38A /* ApiConfig.swift */,
 				A531129525EDB59300E8E38A /* Responses.swift */,
+				A531129825EDB5DB00E8E38A /* Errors.swift */,
+				A53112A225EDB7D000E8E38A /* Parsers.swift */,
 			);
 			path = OpenWeatherAPI;
 			sourceTree = "<group>";
@@ -195,10 +210,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53112A325EDB7D000E8E38A /* Parsers.swift in Sources */,
 				A531129625EDB59300E8E38A /* Responses.swift in Sources */,
+				A53112A925EDB89800E8E38A /* ArrayFiltering.swift in Sources */,
 				A531129325EDB55400E8E38A /* WeatherFetcher.swift in Sources */,
+				A53112A625EDB88400E8E38A /* Formatters.swift in Sources */,
+				A53112A025EDB71400E8E38A /* WeatherFetcherExtensionMethods.swift in Sources */,
 				A531127825EDB14C00E8E38A /* ContentView.swift in Sources */,
 				A531127625EDB14C00E8E38A /* WeatherWithCombineApp.swift in Sources */,
+				A531129925EDB5DB00E8E38A /* Errors.swift in Sources */,
 				A531129025EDB46700E8E38A /* ApiConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
