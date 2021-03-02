@@ -1,9 +1,8 @@
 import SwiftUI
 import Combine
 
-// 1
 class CurrentWeatherViewModel: ObservableObject, Identifiable {
-	// 2
+	
 	@Published var dataSource: CurrentWeatherRowViewModel?
 	
 	let city: String
@@ -17,7 +16,6 @@ class CurrentWeatherViewModel: ObservableObject, Identifiable {
 	func refresh() {
 		weatherFetcher
 			.currentWeatherForecast(forCity: city)
-			// 3
 			.map(CurrentWeatherRowViewModel.init)
 			.receive(on: DispatchQueue.main)
 			.sink(receiveCompletion: { [weak self] value in
