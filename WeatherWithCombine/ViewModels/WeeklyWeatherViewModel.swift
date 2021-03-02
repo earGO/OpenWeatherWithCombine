@@ -15,8 +15,10 @@ class WeeklyWeatherViewModel: ObservableObject, Identifiable {
 	init(
 		scheduler: DispatchQueue = DispatchQueue(label: "WeatherViewModel")
 	) {
+		/* this is a handler for the city property, binded to the textfield,
+		that's invoked every time user types something */
 		$city
-			.dropFirst(1)
+			.dropFirst(1) //city emits its first value the moment we've created the observation; application doesn't need this value
 			.debounce(for: .seconds(0.5), scheduler: scheduler)
 			.sink(receiveValue: fetchWeather(forCity:))
 			.store(in: &disposables)
