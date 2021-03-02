@@ -21,11 +21,11 @@ class WeatherFetcher {
 
 extension WeatherFetcher: WeatherFetchable{
 	func weeklyWeatherForecast(forCity city: String) -> AnyPublisher<WeeklyForecastResponse, WeatherError> {
-		return forecast(session,with: makeWeeklyForecastComponents(withCity: city))
+		return forecast(session, with: makeWeeklyForecastComponents(withCity: city))
 	}
 	
 	func currentWeatherForecast(forCity city: String) -> AnyPublisher<CurrentWeatherForecastResponse, WeatherError> {
-		return forecast(session,with: makeCurrentDayForecastComponents(withCity: city))
+		return forecast(session, with: makeCurrentDayForecastComponents(withCity: city))
 	}
 	
 	
