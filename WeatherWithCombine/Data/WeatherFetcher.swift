@@ -1,7 +1,8 @@
 
 import Foundation
 import Combine
-protocol WeatherFetchable {
+
+protocol WeatherFetchable{
 	func weeklyWeatherForecast(
 		forCity city: String
 	) -> AnyPublisher<WeeklyForecastResponse, WeatherError>
@@ -11,15 +12,13 @@ protocol WeatherFetchable {
 	) -> AnyPublisher<CurrentWeatherForecastResponse, WeatherError>
 }
 
-class WeatherFetcher {
+class WeatherFetcher:WeatherFetchable,Injectable  {
 	private let session: URLSession
 	
 	init(session: URLSession = .shared) {
 		self.session = session
 	}
-}
-
-extension WeatherFetcher: WeatherFetchable{
+	
 	func weeklyWeatherForecast(forCity city: String) -> AnyPublisher<WeeklyForecastResponse, WeatherError> {
 		return forecast(session, with: makeWeeklyForecastComponents(withCity: city))
 	}
@@ -27,7 +26,6 @@ extension WeatherFetcher: WeatherFetchable{
 	func currentWeatherForecast(forCity city: String) -> AnyPublisher<CurrentWeatherForecastResponse, WeatherError> {
 		return forecast(session, with: makeCurrentDayForecastComponents(withCity: city))
 	}
-	
-	
+
 }
 

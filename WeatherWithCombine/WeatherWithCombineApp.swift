@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct WeatherWithCombineApp: App {
-	let mainView = ContentView();
+	
+	private let diContainer = DIContainer();
+	private let viewModel = WeeklyWeatherViewModel();
+	
     var body: some Scene {
         WindowGroup {
-		mainView
+		WeeklyWeatherView(viewModel:viewModel);
         }
     }
 }

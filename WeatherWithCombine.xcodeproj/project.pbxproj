@@ -21,6 +21,9 @@
 		A53112A925EDB89800E8E38A /* ArrayFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53112A825EDB89800E8E38A /* ArrayFiltering.swift */; };
 		A53112AD25EDBCDF00E8E38A /* WeeklyWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53112AC25EDBCDF00E8E38A /* WeeklyWeatherViewModel.swift */; };
 		A53112B025EDBD0800E8E38A /* DailyWeatherRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53112AF25EDBD0800E8E38A /* DailyWeatherRowViewModel.swift */; };
+		A53112B325EDCCD100E8E38A /* WeeklyWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53112B225EDCCD100E8E38A /* WeeklyWeatherView.swift */; };
+		A53112B725EE7CF100E8E38A /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53112B625EE7CF100E8E38A /* DIContainer.swift */; };
+		A53112BA25EE7DE900E8E38A /* DIStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53112B925EE7DE900E8E38A /* DIStructs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		A53112A825EDB89800E8E38A /* ArrayFiltering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayFiltering.swift; sourceTree = "<group>"; };
 		A53112AC25EDBCDF00E8E38A /* WeeklyWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyWeatherViewModel.swift; sourceTree = "<group>"; };
 		A53112AF25EDBD0800E8E38A /* DailyWeatherRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherRowViewModel.swift; sourceTree = "<group>"; };
+		A53112B225EDCCD100E8E38A /* WeeklyWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyWeatherView.swift; sourceTree = "<group>"; };
+		A53112B625EE7CF100E8E38A /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		A53112B925EE7DE900E8E38A /* DIStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIStructs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 		A531127425EDB14C00E8E38A /* WeatherWithCombine */ = {
 			isa = PBXGroup;
 			children = (
+				A53112B525EE7CC000E8E38A /* DI container */,
 				A531128825EDB19D00E8E38A /* Utilities */,
 				A53112AB25EDBCC600E8E38A /* ViewModels */,
 				A531128725EDB18400E8E38A /* Views */,
@@ -104,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				A531127725EDB14C00E8E38A /* ContentView.swift */,
+				A53112B225EDCCD100E8E38A /* WeeklyWeatherView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -145,6 +153,15 @@
 				A53112AF25EDBD0800E8E38A /* DailyWeatherRowViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A53112B525EE7CC000E8E38A /* DI container */ = {
+			isa = PBXGroup;
+			children = (
+				A53112B625EE7CF100E8E38A /* DIContainer.swift */,
+				A53112B925EE7DE900E8E38A /* DIStructs.swift */,
+			);
+			path = "DI container";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,15 +233,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53112B725EE7CF100E8E38A /* DIContainer.swift in Sources */,
 				A53112A325EDB7D000E8E38A /* Parsers.swift in Sources */,
 				A531129625EDB59300E8E38A /* Responses.swift in Sources */,
 				A53112A925EDB89800E8E38A /* ArrayFiltering.swift in Sources */,
+				A53112BA25EE7DE900E8E38A /* DIStructs.swift in Sources */,
 				A531129325EDB55400E8E38A /* WeatherFetcher.swift in Sources */,
 				A53112B025EDBD0800E8E38A /* DailyWeatherRowViewModel.swift in Sources */,
 				A53112A625EDB88400E8E38A /* Formatters.swift in Sources */,
 				A53112A025EDB71400E8E38A /* WeatherFetcherExtensionMethods.swift in Sources */,
 				A531127825EDB14C00E8E38A /* ContentView.swift in Sources */,
 				A531127625EDB14C00E8E38A /* WeatherWithCombineApp.swift in Sources */,
+				A53112B325EDCCD100E8E38A /* WeeklyWeatherView.swift in Sources */,
 				A531129925EDB5DB00E8E38A /* Errors.swift in Sources */,
 				A531129025EDB46700E8E38A /* ApiConfig.swift in Sources */,
 				A53112AD25EDBCDF00E8E38A /* WeeklyWeatherViewModel.swift in Sources */,
